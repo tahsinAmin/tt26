@@ -121,3 +121,32 @@
     @apply bg-background text-foreground;
   }
 }
+
+:root {
+  --container-width: 960px;
+  --section-padding: 112.5px;
+}
+
+section {
+    background-position: center;
+    background-size: cover;
+    padding-top: var(--section-padding);
+    position: relative;
+}
+
+.tablepress>:not(caption)>*>* {
+  background: none;
+  border: none;
+  -webkit-box-sizing: initial;
+  box-sizing: initial;
+  float: none !important;
+  padding: var(--padding);
+  text-align: left;
+  vertical-align: top;
+}
+
+@media (min-width: 992px) {
+  .tablepress {
+      --padding: 0.7em;
+  }
+}
