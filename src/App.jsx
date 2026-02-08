@@ -34,6 +34,7 @@ function App() {
               <th className="column-3">Time (EST)</th>
               <th className="column-5">Matchup</th>
               <th className="column-6">Group</th>
+              <th className="column-7">Winner</th>
             </tr>
           </thead>
           <tbody>
@@ -53,26 +54,15 @@ function App() {
                   <td className="column-3">{group.time}</td>
                   <td className="column-5">{group.matchup}</td>
                   <td className="column-6">{group.group}</td>
+                  {group.history && (
+                    <td className="column-7">{group.history.winner}</td>
+                  )}
                 </tr>
               )
             })}
 
             <tr className="row-91">
-              <td colspan="8" className="column-1"><b>Holiday</b></td>
-            </tr>
-            <tr className="row-92">
-              <td className="column-1">89</td>
-              <td className="column-2">4-Jul-26</td>
-              <td className="column-3">17:00</td>
-              <td className="column-5">Match 74 Winner v Match 77 Winner</td>
-              <td className="column-6"></td>
-            </tr>
-            <tr className="row-93">
-              <td className="column-1">90</td>
-              <td className="column-2">4-Jul-26</td>
-              <td className="column-3">13:00</td>
-              <td className="column-5">Match 73 Winner v Match 75 Winner</td>
-              <td className="column-6"></td>
+              <td colspan="8" className="column-1"><b>10 February 2026</b></td>
             </tr>
 
             <tr className="row-100">
@@ -80,29 +70,29 @@ function App() {
             </tr>
             <tr className="row-101">
               <td className="column-1">97</td>
-              <td className="column-2">9-Jul-26</td>
-              <td className="column-3">16:00</td>
+              <td className="column-2">17-Feb-26</td>
+              <td className="column-3">18:05</td>
               <td className="column-5">Match 89 Winner v Match 90 Winner</td>
               <td className="column-6"></td>
             </tr>
             <tr className="row-102">
               <td className="column-1">98</td>
-              <td className="column-2">10-Jul-26</td>
-              <td className="column-3">15:00</td>
+              <td className="column-2">17-Feb-26</td>
+              <td className="column-3">18:15</td>
               <td className="column-5">Match 93 Winner v Match 94 Winner</td>
               <td className="column-6"></td>
             </tr>
             <tr className="row-103">
               <td className="column-1">99</td>
-              <td className="column-2">11-Jul-26</td>
-              <td className="column-3">17:00</td>
+              <td className="column-2">18-Feb-26</td>
+              <td className="column-3">11:05</td>
               <td className="column-5">Match 91 Winner v Match 92 Winner</td>
               <td className="column-6"></td>
             </tr>
             <tr className="row-104">
               <td className="column-1">100</td>
-              <td className="column-2">11-Jul-26</td>
-              <td className="column-3">21:00</td>
+              <td className="column-2">18-Feb-26</td>
+              <td className="column-3">11:15</td>
               <td className="column-5">Match 95 Winner v Match 96 Winner</td>
               <td className="column-6"></td>
             </tr>
@@ -111,15 +101,15 @@ function App() {
             </tr>
             <tr className="row-106">
               <td className="column-1">101</td>
-              <td className="column-2">14-Jul-26</td>
-              <td className="column-3">15:00</td>
+              <td className="column-2">18-Feb-26</td>
+              <td className="column-3">14:40</td>
               <td className="column-5">Match 97 Winner v Match 98 Winner</td>
               <td className="column-6"></td>
             </tr>
             <tr className="row-107">
               <td className="column-1">102</td>
-              <td className="column-2">15-Jul-26</td>
-              <td className="column-3">15:00</td>
+              <td className="column-2">18-Feb-26</td>
+              <td className="column-3">14:50</td>
               <td className="column-5">Match 99 Winner v Match 100 Winner</td>
               <td className="column-6"></td>
             </tr>
@@ -128,8 +118,8 @@ function App() {
             </tr>
             <tr className="row-109">
               <td className="column-1">103</td>
-              <td className="column-2">18-Jul-26</td>
-              <td className="column-3">17:00</td>
+              <td className="column-2">18-Feb-26</td>
+              <td className="column-3">18:05PM</td>
               <td className="column-5">Match 101 Loser v Match 102 Loser</td>
               <td className="column-6"></td>
             </tr>
@@ -138,8 +128,8 @@ function App() {
             </tr>
             <tr className="row-111">
               <td className="column-1">104</td>
-              <td className="column-2">19-Jul-26</td>
-              <td className="column-3">15:00</td>
+              <td className="column-2">18-Feb-26</td>
+              <td className="column-3">18:15PM</td>
               <td className="column-5">Match 101 Winner v Match 102 Winner</td>
               <td className="column-6"></td>
             </tr>
