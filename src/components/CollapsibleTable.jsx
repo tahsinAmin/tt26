@@ -180,7 +180,7 @@ const CollapsibleTable = () => {
                                                 }}></span>
                                             </span>
                                         </td>
-                                        <td className="column-1">{index + 22}</td>
+                                        <td className="column-1">{group.id}</td>
                                         <td className="column-2">{group.date}</td>
                                         <td className="column-3">{group.time}</td>
                                         <td className="column-5">{group.players[0]} vs. {group.players[1]}</td>
