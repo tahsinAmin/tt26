@@ -9,6 +9,7 @@ import {
     SelectLabel,
     SelectTrigger,
     SelectValue,
+    SelectSeparator
 } from "@/components/ui/select"
 
 const CollapsibleTable = () => {
@@ -17,12 +18,12 @@ const CollapsibleTable = () => {
     const [selectedGroup, setSelectedGroup] = useState("All");
     const [filteredGroups, setFilteredGroups] = useState(groups);
     const groupNames = {
-        A1: ["Mamun", "Neloy", "Sagar", "Shagato", "Mubin", "Samrat Ghosh"],
-        A2: ["Fazle", "Larry", "Aminul", "Tahsin", "Topu", "Shohag Rana"],
-        A3: ["Isfaque Jahan MD. Sakib", "Fazle Rabbi", "Naeem", "Jaber", "Ashikur Rahman"],
-        A4: ["Nadim", "Tahseen", "Farhan", "Saiful", "Partha", "Imtiaz Shawn"],
-        B1: ["Samrat Ghosh", "Shohel Rana", "Shohag", "Raihan", "Mehedi"],
-        B2: ["Imtiaz", "Ashikur", "Jaminur", "Masum", "Tuhin"]
+        A1: ["Mamun", "Mohammad Nabiluzzaman Neloy", "Sagar", "Md. Shahiduzzaman", "Md. Abdullah Al-Mubin", "Samrat Ghosh"],
+        A2: ["Fazle Rabbi Biswas", "Luscious Larry Das", "Md. Aminul Islam", "Tahsin", "Md. Ashiqul Alam Chowdhury", "Shohag Rana"],
+        A3: ["Isfaque Jahan Md. Sakib", "Fazle Rabbi", "Shah Riya Naeem", "Md. Jaber Al Saleh", "Ashikur Rahman"],
+        A4: ["Abdul Awal Nadim", "Md. Tahseen Rahman", "Farhan", "Md. Saiful Islam", "Partha", "Imtiaz Shawn"],
+        B1: ["Samrat Ghosh", "Shohel Rana", "Shohag Rana", "Raihan", "Mehedi Hasan"],
+        B2: ["Imtiaz Shawn", "Ashikur Rahman", "Jaminur", "Mahmudul Hasan Masum", "Tariquzzaman Tuhin"]
     }
 
 
@@ -43,7 +44,7 @@ const CollapsibleTable = () => {
         }
 
         return (
-            <table className="history-table">
+            <table className="tablepress">
                 <thead>
                     <tr>
                         <th>Game</th>
@@ -102,6 +103,7 @@ const CollapsibleTable = () => {
             });
         }
         setFilteredGroups(newFilteredGroups);
+        setExpandedRows(new Set());
     }, [selectedName, selectedGroup]);
 
     return (
@@ -120,12 +122,69 @@ const CollapsibleTable = () => {
                             <SelectGroup>
                                 <SelectLabel>Names</SelectLabel>
                                 <SelectItem value="All">All</SelectItem>
-                                <SelectItem value="Sagar">Sagar</SelectItem>
-                                <SelectItem value="Md. Abdullah Al-Mubin">Md. Abdullah Al-Mubin</SelectItem>
-                                <SelectItem value="Mamun">Mamun</SelectItem>
-                                <SelectItem value="MD. Shahiduzzaman">MD. Shahiduzzaman</SelectItem>
-                                <SelectItem value="Samrat Ghosh">Samrat Ghosh</SelectItem>
-                                <SelectItem value="Neloy">Neloy</SelectItem>
+
+                                <SelectGroup>
+                                    <SelectLabel>Group A1</SelectLabel>
+                                    <SelectItem value="Sagar">Sagar</SelectItem>
+                                    <SelectItem value="Md. Abdullah Al-Mubin">Md. Abdullah Al-Mubin</SelectItem>
+                                    <SelectItem value="Mamun">Mamun</SelectItem>
+                                    <SelectItem value="Md. Shahiduzzaman">Md. Shahiduzzaman</SelectItem>
+                                    <SelectItem value="Samrat Ghosh">Samrat Ghosh</SelectItem>
+                                    <SelectItem value="Mohammad Nabiluzzaman Neloy">Mohammad Nabiluzzaman Neloy</SelectItem>
+                                </SelectGroup>
+                                <SelectSeparator />
+
+                                <SelectGroup>
+                                    <SelectLabel>Group A2</SelectLabel>
+                                    <SelectItem value="Fazle Rabbi Biswas">Fazle Rabbi Biswas</SelectItem>
+                                    <SelectItem value="Luscious Larry Das">Luscious Larry Das</SelectItem>
+                                    <SelectItem value="Md. Aminul Islam">Md. Aminul Islam</SelectItem>
+                                    <SelectItem value="Tahsin">Tahsin</SelectItem>
+                                    <SelectItem value="Md. Ashiqul Alam Chowdhury">Md. Ashiqul Alam Chowdhury</SelectItem>
+                                    <SelectItem value="Shohag Rana">Shohag Rana</SelectItem>
+                                </SelectGroup>
+                                <SelectSeparator />
+
+                                <SelectGroup>
+                                    <SelectLabel>Group A3</SelectLabel>
+                                    <SelectItem value="Isfaque Jahan Md. Sakib">Isfaque Jahan Md. Sakib</SelectItem>
+                                    <SelectItem value="Fazle Rabbi">Fazle Rabbi</SelectItem>
+                                    <SelectItem value="Shah Riya Naeem">Shah Riya Naeem</SelectItem>
+                                    <SelectItem value="Md. Jaber Al Saleh">Md. Jaber Al Saleh</SelectItem>
+                                    <SelectItem value="Ashikur Rahman">Ashikur Rahman</SelectItem>
+                                </SelectGroup>
+                                <SelectSeparator />
+
+                                <SelectGroup>
+                                    <SelectLabel>Group A4</SelectLabel>
+                                    <SelectItem value="Abdul Awal Nadim">Abdul Awal Nadim</SelectItem>
+                                    <SelectItem value="Md. Tahseen Rahman">Md. Tahseen Rahman</SelectItem>
+                                    <SelectItem value="Farhan">Farhan</SelectItem>
+                                    <SelectItem value="Md. Saiful Islam">Md. Saiful Islam</SelectItem>
+                                    <SelectItem value="Partha">Partha</SelectItem>
+                                    <SelectItem value="Imtiaz Shawn">Imtiaz Shawn</SelectItem>
+                                </SelectGroup>
+                                <SelectSeparator />
+
+                                <SelectGroup>
+                                    <SelectLabel>Group B1</SelectLabel>
+                                    <SelectItem value="Samrat Ghosh">Samrat Ghosh</SelectItem>
+                                    <SelectItem value="Shohag Rana">Shohag Rana</SelectItem>
+                                    <SelectItem value="Shohel Rana">Shohel Rana</SelectItem>
+                                    <SelectItem value="Raihan">Raihan</SelectItem>
+                                    <SelectItem value="Mehedi Hasan">Mehedi Hasan</SelectItem>
+                                </SelectGroup>
+                                <SelectSeparator />
+
+                                <SelectGroup>
+                                    <SelectLabel>Group B2</SelectLabel>
+                                    <SelectItem value="Shohag Rana">Shohag Rana</SelectItem>
+                                    <SelectItem value="Imtiaz Shawn">Imtiaz Shawn</SelectItem>
+                                    <SelectItem value="Jaminur">Jaminur</SelectItem>
+                                    <SelectItem value="Mahmudul Hasan Masum">Mahmudul Hasan Masum</SelectItem>
+                                    <SelectItem value="Tariquzzaman Tuhin">Tariquzzaman Tuhin</SelectItem>
+                                </SelectGroup>
+                                <SelectSeparator />
                             </SelectGroup>
                         </SelectContent>
                     </Select>

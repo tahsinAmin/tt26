@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button";
-import { groups } from "./data";
+
+import CollapsibleTable from "./components/CollapsibleTable";
 
 function App() {
   return <div>
