@@ -14,7 +14,7 @@ export const groups = [
         id: 23,
         date: "26-Jan-26",
         time: "14:40",
-        players: ["Luscious Larry Das", "Md. Ashiqul Alam Chowdhury"],
+        players: ["Luscious Larry Das", "Md. Ashfiqul Alam Chowdhury"],
         group: "A2",
         history: {
             winner: "Luscious Larry Das",
@@ -190,7 +190,7 @@ export const groups = [
         id: 39,
         date: "02-Feb-26",
         time: "18:05",
-        players: ["Fazle Rabbi Biswas", "Md. Ashiqul Alam Chowdhury"],
+        players: ["Fazle Rabbi Biswas", "Md. Ashfiqul Alam Chowdhury"],
         group: "A2",
         history: {
             winner: "Fazle Rabbi Biswas",
@@ -459,7 +459,7 @@ export const groups = [
         id: 62,
         date: "09-Feb-26",
         time: "18:00",
-        players: ["Md. Aminul Islam", "Md. Ashiqul Alam Chowdhury"],
+        players: ["Md. Aminul Islam", "Md. Ashfiqul Alam Chowdhury"],
         group: "A2",
         history: {
             winner: "Md. Aminul Islam",
@@ -470,7 +470,7 @@ export const groups = [
         id: 63,
         date: "09-Feb-26",
         time: "18:10",
-        players: ["Tahsin", "Md. Ashiqul Alam Chowdhury"],
+        players: ["Tahsin", "Md. Ashfiqul Alam Chowdhury"],
         group: "A2",
         history: {
             winner: "Tahsin",
@@ -619,20 +619,279 @@ export const groups = [
         }
     },
     {
+        id: -3,
+        date: "05-Feb-26",
+        time: "",
+        matchup: "Holiday",
+        group: "-",
+    },
+    {
         id: 77,
-        date: "10-Feb-26",
-        time: "11:10",
+        date: "16-Feb-26",
+        time: "11:20",
         players: ["Shohag Rana", "Luscious Larry Das"],
         group: "A2",
         history: null
     },
     {
         id: 78,
-        date: "10-Feb-26",
-        time: "18:10",
+        date: "16-Feb-26",
+        time: "14:35",
         players: ["Abdul Awal Nadim", "Imtiaz Shawn"],
         group: "A4",
         history: null
+    },
+    {
+        "id": 79,
+        "date": "16-Feb-26",
+        "time": "11:00",
+        "players": ["Imtiaz Shawn", "Md. Tahseen Rahman"],
+        "group": "A4",
+        "history": null
+    },
+    {
+        "id": 80,
+        "date": "16-Feb-26",
+        "time": "11:05",
+        "players": ["Abdul Awal Nadim", "Md. Tahseen Rahman"],
+        "group": "A4",
+        "history": null
+    },
+    {
+        "id": 81,
+        "date": "16-Feb-26",
+        "time": "11:10",
+        "players": ["Shohag Rana", "Luscious Larry Das"],
+        "group": "A2",
+        "history": null
+    },
+    {
+        "id": 82,
+        "date": "16-Feb-26",
+        "time": "11:15",
+        "players": ["Ashikur Rahman", "Isfaque Jahan Md. Sakib"],
+        "group": "A3",
+        "history": null
+    },
+    {
+        "id": 83,
+        "date": "16-Feb-26",
+        "time": "11:20",
+        "players": ["Fazle Rabbi", "Ashikur Rahman"],
+        "group": "A3",
+        "history": null
+    },
+    {
+        "id": 84,
+        "date": "16-Feb-26",
+        "time": "14:00",
+        "players": ["Md. Shahiduzzaman", "Md. Abdullah Al-Mubin"],
+        "group": "A1",
+        "history": null
+    },
+    {
+        "id": 85,
+        "date": "16-Feb-26",
+        "time": "14:30",
+        "players": ["Partha", "Imtiaz Shawn"],
+        "group": "A4",
+        "history": null
+    },
+    {
+        "id": 86,
+        "date": "16-Feb-26",
+        "time": "14:35",
+        "players": ["Abdul Awal Nadim", "Imtiaz Shawn"],
+        "group": "A4",
+        "history": null
+    },
+    {
+        "id": 87,
+        "date": "16-Feb-26",
+        "time": "14:40",
+        "players": ["Abdul Awal Nadim", "Md. Saiful Islam"],
+        "group": "A4",
+        "history": null
+    },
+    {
+        "id": 88,
+        "date": "16-Feb-26",
+        "time": "14:45",
+        "players": ["Md. Saiful Islam", "Md. Tahseen Rahman"],
+        "group": "A4",
+        "history": null
+    },
+    {
+        "id": 89,
+        "date": "16-Feb-26",
+        "time": "14:50",
+        "players": ["Fazle Rabbi Biswas", "Shohag Rana"],
+        "group": "A2",
+        "history": null
+    },
+    {
+        "id": 90,
+        "date": "16-Feb-26",
+        "time": "18:05",
+        "players": ["Abdul Awal Nadim", "Farhan"],
+        "group": "A4",
+        "history": null
+    },
+    {
+        "id": 91,
+        "date": "16-Feb-26",
+        "time": "18:10",
+        "players": ["Farhan", "Imtiaz Shawn"],
+        "group": "A4",
+        "history": null
+    },
+    {
+        "id": 92,
+        "date": "16-Feb-26",
+        "time": "18:15",
+        "players": ["Md. Ashfiqul Alam Chowdhury", "Shohag Rana"],
+        "group": "A2",
+        "history": null
+    },
+    {
+        "id": 93,
+        "date": "16-Feb-26",
+        "time": "18:20",
+        "players": ["Md. Saiful Islam", "Partha"],
+        "group": "A4",
+        "history": null
+    },
+    {
+        "id": 94,
+        "date": "16-Feb-26",
+        "time": "19:00",
+        "players": ["Mamun", "Sagar"],
+        "group": "A1",
+        "history": null
+    },
+    {
+        "id": 95,
+        "date": "16-Feb-26",
+        "time": "19:10",
+        "players": ["Mamun", "Samrat Ghosh"],
+        "group": "A1",
+        "history": null
+    },
+    {
+        "id": 96,
+        "date": "17-Feb-26",
+        "time": "11:00",
+        "players": ["Fazle Rabbi Biswas", "Luscious Larry Das"],
+        "group": "A2",
+        "history": null
+    },
+    {
+        "id": 97,
+        "date": "17-Feb-26",
+        "time": "11:05",
+        "players": ["Fazle Rabbi Biswas", "Md. Ashfiqul Alam Chowdhury"],
+        "group": "A2",
+        "history": null
+    },
+    {
+        "id": 98,
+        "date": "17-Feb-26",
+        "time": "11:10",
+        "players": ["Samrat Ghosh", "Mohammad Nabiluzzaman Neloy"],
+        "group": "A1",
+        "history": null
+    },
+    {
+        id: -3,
+        date: "17-Feb-26",
+        time: "",
+        matchup: "Quarter-finals",
+        group: "-",
+    },
+    {
+        "id": 99,
+        "date": "17-Feb-26",
+        "time": "11:15",
+        "players": ["Top of Group A1", "Runner-up of Group A3"],
+        "group": "QF1",
+        "history": null
+    },
+    {
+        "id": 100,
+        "date": "17-Feb-26",
+        "time": "11:20",
+        "players": ["Top of Group A2", "Runner-up of Group A4"],
+        "group": "QF2",
+        "history": null
+    },
+    {
+        "id": 101,
+        "date": "17-Feb-26",
+        "time": "14:35",
+        "players": ["Top of Group A3", "Runner-up of Group A1"],
+        "group": "QF3",
+        "history": null
+    },
+    {
+        "id": 102,
+        "date": "17-Feb-26",
+        "time": "14:40",
+        "players": ["Top of Group A4", "Runner-up of Group A2"],
+        "group": "QF4",
+        "history": null
+    },
+    {
+        id: -3,
+        date: "17-Feb-26",
+        time: "",
+        matchup: "Semi-finals",
+        group: "-",
+    },
+    {
+        "id": 103,
+        "date": "17-Feb-26",
+        "time": "14:45",
+        "players": ["Winner QF 1", "Winner QF 2"],
+        "group": "SF1",
+        "history": null
+    },
+    {
+        "id": 104,
+        "date": "17-Feb-26",
+        "time": "14:50",
+        "players": ["Winner QF 3", "Winner QF 4"],
+        "group": "SF2",
+        "history": null
+    },
+    {
+        id: -4,
+        date: "17-Feb-26",
+        time: "",
+        matchup: "Third Place",
+        group: "-",
+    },
+    {
+        "id": 105,
+        "date": "17-Feb-26",
+        "time": "18:00",
+        "players": ["Loser SF 1", "Loser SF 2"],
+        "group": "Third Place",
+        "history": null
+    },
+    {
+        id: -5,
+        date: "17-Feb-26",
+        time: "",
+        matchup: "Final",
+        group: "-",
+    },
+    {
+        "id": 106,
+        "date": "17-Feb-26",
+        "time": "18:10",
+        "players": ["Winner SF 1", "Winner SF 2"],
+        "group": "Final",
+        "history": null
     },
 ]
 
@@ -689,39 +948,3 @@ export const standingsB2 = [
     { name: "Mahmudul Hasan Masum", P: 3, W: 0, L: 3, Pts: 0 },
     { name: "Tariquzzaman Tuhin", P: 3, W: 0, L: 3, Pts: 0 }
 ];
-
-
-// 69 A4 11:00 Imtiaz Shawn vs. Md. Tahseen Rahman
-// 93 A4 11:05 Abdul Awal Nadim vs. Md. Tahseen Rahman
-// 85 A3 11:10 Ashikur Rahman vs. Sakib
-// 96 A3 11:15 Fazle Rabbi vs. Ashikur Rahman
-
-// 93 A1 14:00 Md. Shahiduzzaman vs. Md. Abdullah Al-Mubin
-// 88 A4 14:30 Partha vs. Imtiaz Shawn
-// 77 A4 14:35 Abdul Awal Nadim vs. Imtiaz Shawn
-// 77 A4 14:40 Abdul Awal Nadim vs. Md. Saiful Islam
-// 84 A4 14:45 Md. Saiful Islam vs. Md. Tahseen Rahman
-// 71 A2 14:55 Shohag Rana vs. Luscious Larry Das
-// 94 A2 15:00 Fazle Rabbi Biswas vs. Shohag Rana
-
-// 80 A4 18:05 Abdul Awal Nadim vs. Farhan
-// 97 A4 18:10 Farhan vs. Imtiaz Shawn
-// 86 A2 18:15 Md. Ashiqul Alam Chowdhury vs. Shohag Rana
-// 96 A4 18:20 Md. Saiful Islam vs. Partha
-
-// 79 A1 ~19:00 Mamun vs. Sagar
-// 90 A1 ~19:10 Mamun vs. Samrat Ghosh
-
-
-// 91 A2 18:15 Fazle Rabbi Biswas vs. Luscious Larry Das
-// 71 A2 14:40 Fazle Rabbi Biswas vs. Md. Ashiqul Alam Chowdhury
-// 66 A1 18:00 Samrat Ghosh vs. Mohammad Nabiluzzaman Neloy
-// QF1
-
-// QF2
-// QF3
-// QF4
-// SF1
-
-// SF2
-// F

@@ -19,7 +19,7 @@ const CollapsibleTable = () => {
     const [filteredGroups, setFilteredGroups] = useState(groups);
     const groupNames = {
         A1: ["Mamun", "Mohammad Nabiluzzaman Neloy", "Sagar", "Md. Shahiduzzaman", "Md. Abdullah Al-Mubin", "Samrat Ghosh"],
-        A2: ["Fazle Rabbi Biswas", "Luscious Larry Das", "Md. Aminul Islam", "Tahsin", "Md. Ashiqul Alam Chowdhury", "Shohag Rana"],
+        A2: ["Fazle Rabbi Biswas", "Luscious Larry Das", "Md. Aminul Islam", "Tahsin", "Md. Ashfiqul Alam Chowdhury", "Shohag Rana"],
         A3: ["Isfaque Jahan Md. Sakib", "Fazle Rabbi", "Shah Riya Naeem", "Md. Jaber Al Saleh", "Ashikur Rahman"],
         A4: ["Abdul Awal Nadim", "Md. Tahseen Rahman", "Farhan", "Md. Saiful Islam", "Partha", "Imtiaz Shawn"],
         B1: ["Samrat Ghosh", "Shohel Rana", "Shohag Rana", "Raihan", "Mehedi Hasan"],
@@ -40,7 +40,7 @@ const CollapsibleTable = () => {
     const HistoryTable = ({ history, players }) => {
         console.log(history);
         if (!history || history.length === 0) {
-            return <p style={{ color: '#666', fontSize: '13px' }}>Postponed/Walkover</p>;
+            return <p style={{ color: '#666', fontSize: '13px' }}>Not Applicable</p>;
         }
 
         return (
@@ -112,7 +112,7 @@ const CollapsibleTable = () => {
 
             <h1 className="text-7xl font-bold mb-6 text-[#00456b]">Table Tennis Singles 2026 (Unofficial)</h1>
 
-            <section className="tablepress-responsive-container">
+            <section className="tablepress-responsive-container mb-40">
                 <div className="grid gap-2 grid-cols-6 mb-6">
                     <Select name="group" id="" value={selectedName} onValueChange={handleNameChange}>
                         <SelectTrigger className="w-full max-w-48">
@@ -140,7 +140,7 @@ const CollapsibleTable = () => {
                                     <SelectItem value="Luscious Larry Das">Luscious Larry Das</SelectItem>
                                     <SelectItem value="Md. Aminul Islam">Md. Aminul Islam</SelectItem>
                                     <SelectItem value="Tahsin">Tahsin</SelectItem>
-                                    <SelectItem value="Md. Ashiqul Alam Chowdhury">Md. Ashiqul Alam Chowdhury</SelectItem>
+                                    <SelectItem value="Md. Ashfiqul Alam Chowdhury">Md. Ashfiqul Alam Chowdhury</SelectItem>
                                     <SelectItem value="Shohag Rana">Shohag Rana</SelectItem>
                                 </SelectGroup>
                                 <SelectSeparator />
@@ -224,7 +224,7 @@ const CollapsibleTable = () => {
                             if (group.id < 0) {
                                 return (
                                     <tr className="row-91" key={index}>
-                                        <td colSpan="8" className="column-1"><b>Holiday</b></td>
+                                        <td colSpan="8" className="column-1"><b>{group.matchup}</b></td>
                                     </tr>
                                 )
                             }
@@ -263,79 +263,6 @@ const CollapsibleTable = () => {
                                 </React.Fragment>
                             )
                         })}
-
-                        <tr className="row-91">
-                            <td colSpan="8" className="column-1"><b>10 February 2026</b></td>
-                        </tr>
-
-                        <tr className="row-100">
-                            <td colSpan="8" className="column-1"><b>Quarter-finals</b></td>
-                        </tr>
-                        <tr className="row-101">
-                            <td className="column-1">97</td>
-                            <td className="column-2">17-Feb-26</td>
-                            <td className="column-3">18:05</td>
-                            <td className="column-5">Match 89 Winner v Match 90 Winner</td>
-                            <td className="column-6"></td>
-                        </tr>
-                        <tr className="row-102">
-                            <td className="column-1">98</td>
-                            <td className="column-2">17-Feb-26</td>
-                            <td className="column-3">18:15</td>
-                            <td className="column-5">Match 93 Winner v Match 94 Winner</td>
-                            <td className="column-6"></td>
-                        </tr>
-                        <tr className="row-103">
-                            <td className="column-1">99</td>
-                            <td className="column-2">18-Feb-26</td>
-                            <td className="column-3">11:05</td>
-                            <td className="column-5">Match 91 Winner v Match 92 Winner</td>
-                            <td className="column-6"></td>
-                        </tr>
-                        <tr className="row-104">
-                            <td className="column-1">100</td>
-                            <td className="column-2">18-Feb-26</td>
-                            <td className="column-3">11:15</td>
-                            <td className="column-5">Match 95 Winner v Match 96 Winner</td>
-                            <td className="column-6"></td>
-                        </tr>
-                        <tr className="row-105">
-                            <td colSpan="8" className="column-1"><b>Semi-finals</b></td>
-                        </tr>
-                        <tr className="row-106">
-                            <td className="column-1">101</td>
-                            <td className="column-2">18-Feb-26</td>
-                            <td className="column-3">14:40</td>
-                            <td className="column-5">Match 97 Winner v Match 98 Winner</td>
-                            <td className="column-6"></td>
-                        </tr>
-                        <tr className="row-107">
-                            <td className="column-1">102</td>
-                            <td className="column-2">18-Feb-26</td>
-                            <td className="column-3">14:50</td>
-                            <td className="column-5">Match 99 Winner v Match 100 Winner</td>
-                            <td className="column-6"></td>
-                        </tr>
-                        <tr className="row-108">
-                            <td colSpan="8" className="column-1"><b>Third Place</b></td>
-                        </tr>
-                        <tr className="row-109">
-                            <td className="column-1">103</td>
-                            <td className="column-2">18-Feb-26</td>
-                            <td className="column-3">18:05PM</td>
-                            <td className="column-5">Match 101 Loser v Match 102 Loser</td>
-                            <td className="column-6"></td>
-                        </tr>
-                        <tr className="row-110">
-                            <td colSpan="8" className="column-1"><b>Final</b></td>
-                        </tr>
-                        <tr className="row-111">
-                            <td className="column-1">104</td>
-                            <td className="column-2">18-Feb-26</td>
-                            <td className="column-3">18:15PM</td>
-                            <td className="column-5">Match 101 Winner v Match 102 Winner</td>
-                            <td className="column-6"></td>
-                        </tr>
                     </tbody>
                 </table>) : (<p>No data found</p>)}
 
