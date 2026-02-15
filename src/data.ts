@@ -578,7 +578,7 @@ export const groups = [
         id: 73,
         date: "10-Feb-26",
         time: "14:50",
-        players: ["Md. Shahiduzzaman", "Neloy"],
+        players: ["Md. Shahiduzzaman", "Mohammad Nabiluzzaman Neloy"],
         group: "A1",
         history: {
             winner: "Md. Shahiduzzaman",
@@ -598,6 +598,17 @@ export const groups = [
     },
     {
         id: 75,
+        date: "09-Feb-26",
+        time: "14:40",
+        players: ["Shah Riya Naeem", "Ashikur Rahman"],
+        group: "A3",
+        history: {
+            winner: "Shah Riya Naeem",
+            results: [[11, 8, 0], [8, 11, 1], [11, 6, 1]]
+        }
+    },
+    {
+        id: 76,
         date: "10-Feb-26",
         time: "11:10",
         players: ["Md. Aminul Islam", "Shohag Rana"],
@@ -608,7 +619,7 @@ export const groups = [
         }
     },
     {
-        id: 76,
+        id: 77,
         date: "10-Feb-26",
         time: "11:10",
         players: ["Md. Abdullah Al-Mubin", "Samrat Ghosh"],
@@ -626,23 +637,7 @@ export const groups = [
         group: "-",
     },
     {
-        id: 77,
-        date: "16-Feb-26",
-        time: "11:20",
-        players: ["Shohag Rana", "Luscious Larry Das"],
-        group: "A2",
-        history: null
-    },
-    {
-        id: 78,
-        date: "16-Feb-26",
-        time: "14:35",
-        players: ["Abdul Awal Nadim", "Imtiaz Shawn"],
-        group: "A4",
-        history: null
-    },
-    {
-        "id": 79,
+        "id": 78,
         "date": "16-Feb-26",
         "time": "11:00",
         "players": ["Imtiaz Shawn", "Md. Tahseen Rahman"],
@@ -650,7 +645,7 @@ export const groups = [
         "history": null
     },
     {
-        "id": 80,
+        "id": 79,
         "date": "16-Feb-26",
         "time": "11:05",
         "players": ["Abdul Awal Nadim", "Md. Tahseen Rahman"],
@@ -658,31 +653,31 @@ export const groups = [
         "history": null
     },
     {
-        "id": 81,
+        "id": 80,
         "date": "16-Feb-26",
         "time": "11:10",
-        "players": ["Shohag Rana", "Luscious Larry Das"],
-        "group": "A2",
-        "history": null
-    },
-    {
-        "id": 82,
-        "date": "16-Feb-26",
-        "time": "11:15",
         "players": ["Ashikur Rahman", "Isfaque Jahan Md. Sakib"],
         "group": "A3",
         "history": null
     },
     {
-        "id": 83,
+        "id": 81,
         "date": "16-Feb-26",
-        "time": "11:20",
+        "time": "11:15",
         "players": ["Fazle Rabbi", "Ashikur Rahman"],
         "group": "A3",
         "history": null
     },
     {
-        "id": 84,
+        id: 82,
+        date: "16-Feb-26",
+        time: "11:20",
+        players: ["Shohag Rana", "Luscious Larry Das"],
+        group: "A2",
+        history: null
+    },
+    {
+        "id": 83,
         "date": "16-Feb-26",
         "time": "14:00",
         "players": ["Md. Shahiduzzaman", "Md. Abdullah Al-Mubin"],
@@ -690,7 +685,7 @@ export const groups = [
         "history": null
     },
     {
-        "id": 85,
+        "id": 84,
         "date": "16-Feb-26",
         "time": "14:30",
         "players": ["Partha", "Imtiaz Shawn"],
@@ -698,25 +693,33 @@ export const groups = [
         "history": null
     },
     {
+        id: 85,
+        date: "16-Feb-26",
+        time: "14:35",
+        players: ["Abdul Awal Nadim", "Imtiaz Shawn"],
+        group: "A4",
+        history: null
+    },
+    {
         "id": 86,
         "date": "16-Feb-26",
-        "time": "14:35",
-        "players": ["Abdul Awal Nadim", "Imtiaz Shawn"],
-        "group": "A4",
+        "time": "14:40",
+        "players": ["Mamun", "Md. Shahiduzzaman"],
+        "group": "A1",
         "history": null
     },
     {
         "id": 87,
         "date": "16-Feb-26",
-        "time": "14:40",
-        "players": ["Abdul Awal Nadim", "Md. Saiful Islam"],
+        "time": "14:45",
+        "players": ["Partha", "Md. Saiful Islam"],
         "group": "A4",
         "history": null
     },
     {
         "id": 88,
         "date": "16-Feb-26",
-        "time": "14:45",
+        "time": "14:50",
         "players": ["Md. Saiful Islam", "Md. Tahseen Rahman"],
         "group": "A4",
         "history": null
@@ -724,7 +727,7 @@ export const groups = [
     {
         "id": 89,
         "date": "16-Feb-26",
-        "time": "14:50",
+        "time": "14:55",
         "players": ["Fazle Rabbi Biswas", "Shohag Rana"],
         "group": "A2",
         "history": null
@@ -756,21 +759,13 @@ export const groups = [
     {
         "id": 93,
         "date": "16-Feb-26",
-        "time": "18:20",
-        "players": ["Md. Saiful Islam", "Partha"],
-        "group": "A4",
-        "history": null
-    },
-    {
-        "id": 94,
-        "date": "16-Feb-26",
         "time": "19:00",
         "players": ["Mamun", "Sagar"],
         "group": "A1",
         "history": null
     },
     {
-        "id": 95,
+        "id": 94,
         "date": "16-Feb-26",
         "time": "19:10",
         "players": ["Mamun", "Samrat Ghosh"],
@@ -778,7 +773,7 @@ export const groups = [
         "history": null
     },
     {
-        "id": 96,
+        "id": 95,
         "date": "17-Feb-26",
         "time": "11:00",
         "players": ["Fazle Rabbi Biswas", "Luscious Larry Das"],
@@ -786,17 +781,9 @@ export const groups = [
         "history": null
     },
     {
-        "id": 97,
+        "id": 96,
         "date": "17-Feb-26",
         "time": "11:05",
-        "players": ["Fazle Rabbi Biswas", "Md. Ashfiqul Alam Chowdhury"],
-        "group": "A2",
-        "history": null
-    },
-    {
-        "id": 98,
-        "date": "17-Feb-26",
-        "time": "11:10",
         "players": ["Samrat Ghosh", "Mohammad Nabiluzzaman Neloy"],
         "group": "A1",
         "history": null
@@ -809,23 +796,23 @@ export const groups = [
         group: "-",
     },
     {
-        "id": 99,
+        "id": 97,
         "date": "17-Feb-26",
-        "time": "11:15",
+        "time": "11:10",
         "players": ["Top of Group A1", "Runner-up of Group A3"],
         "group": "QF1",
         "history": null
     },
     {
-        "id": 100,
+        "id": 98,
         "date": "17-Feb-26",
-        "time": "11:20",
+        "time": "11:15",
         "players": ["Top of Group A2", "Runner-up of Group A4"],
         "group": "QF2",
         "history": null
     },
     {
-        "id": 101,
+        "id": 99,
         "date": "17-Feb-26",
         "time": "14:35",
         "players": ["Top of Group A3", "Runner-up of Group A1"],
@@ -833,7 +820,7 @@ export const groups = [
         "history": null
     },
     {
-        "id": 102,
+        "id": 100,
         "date": "17-Feb-26",
         "time": "14:40",
         "players": ["Top of Group A4", "Runner-up of Group A2"],
@@ -848,7 +835,7 @@ export const groups = [
         group: "-",
     },
     {
-        "id": 103,
+        "id": 101,
         "date": "17-Feb-26",
         "time": "14:45",
         "players": ["Winner QF 1", "Winner QF 2"],
@@ -856,7 +843,7 @@ export const groups = [
         "history": null
     },
     {
-        "id": 104,
+        "id": 102,
         "date": "17-Feb-26",
         "time": "14:50",
         "players": ["Winner QF 3", "Winner QF 4"],
@@ -871,7 +858,7 @@ export const groups = [
         group: "-",
     },
     {
-        "id": 105,
+        "id": 103,
         "date": "17-Feb-26",
         "time": "18:00",
         "players": ["Loser SF 1", "Loser SF 2"],
@@ -886,7 +873,7 @@ export const groups = [
         group: "-",
     },
     {
-        "id": 106,
+        "id": 104,
         "date": "17-Feb-26",
         "time": "18:10",
         "players": ["Winner SF 1", "Winner SF 2"],
@@ -904,7 +891,7 @@ export const standingsA1 = [
     { name: "Md. Shahiduzzaman", P: 3, W: 2, L: 1, Pts: 2 },
     { name: "Mamun", P: 2, W: 1, L: 1, Pts: 1 },
     { name: "Samrat Ghosh", P: 3, W: 1, L: 2, Pts: 1 },
-    { name: "Mohammad Nabiluzzaman Neloy", P: 3, W: 0, L: 3, Pts: 0 }
+    { name: "Mohammad Nabiluzzaman Neloy", P: 4, W: 0, L: 4, Pts: 0 }
 ];
 
 export const standingsA2 = [

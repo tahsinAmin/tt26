@@ -11,6 +11,8 @@ import {
     SelectValue,
     SelectSeparator
 } from "@/components/ui/select"
+import { Field, FieldLabel } from "@/components/ui/field"
+import Standings from './Standings';
 
 const CollapsibleTable = () => {
     const [expandedRows, setExpandedRows] = useState(new Set());
@@ -76,7 +78,6 @@ const CollapsibleTable = () => {
         }
     };
     const handleNameChange = (value) => {
-        console.log(value);
         setSelectedName(value);
     };
 
@@ -107,105 +108,108 @@ const CollapsibleTable = () => {
     }, [selectedName, selectedGroup]);
 
     return (
-        <div className="min-h-svh max-w-7xl mx-auto">
+        <div className="min-h-svh max-w-[1660px] mx-auto">
+            <h1 className="text-7xl font-bold my-26 text-[#00456b]">Table Tennis Singles 2026 (Unofficial)</h1>
 
-
-            <h1 className="text-7xl font-bold mb-6 text-[#00456b]">Table Tennis Singles 2026 (Unofficial)</h1>
+            <Standings />
 
             <section className="tablepress-responsive-container mb-40">
                 <div className="grid gap-2 grid-cols-6 mb-6">
-                    <Select name="group" id="" value={selectedName} onValueChange={handleNameChange}>
-                        <SelectTrigger className="w-full max-w-48">
-                            <SelectValue placeholder="Select a Name" />
-                        </SelectTrigger>
-                        <SelectContent>
-                            <SelectGroup>
-                                <SelectLabel>Names</SelectLabel>
-                                <SelectItem value="All">All</SelectItem>
+                    <Field>
+                        <FieldLabel>Player</FieldLabel>
 
+                        <Select name="players" id="" value={selectedName} onValueChange={handleNameChange}>
+                            <SelectTrigger className="w-full max-w-48">
+                                <SelectValue placeholder="Select a Name" />
+                            </SelectTrigger>
+                            <SelectContent>
                                 <SelectGroup>
-                                    <SelectLabel>Group A1</SelectLabel>
-                                    <SelectItem value="Sagar">Sagar</SelectItem>
-                                    <SelectItem value="Md. Abdullah Al-Mubin">Md. Abdullah Al-Mubin</SelectItem>
-                                    <SelectItem value="Mamun">Mamun</SelectItem>
-                                    <SelectItem value="Md. Shahiduzzaman">Md. Shahiduzzaman</SelectItem>
-                                    <SelectItem value="Samrat Ghosh">Samrat Ghosh</SelectItem>
-                                    <SelectItem value="Mohammad Nabiluzzaman Neloy">Mohammad Nabiluzzaman Neloy</SelectItem>
-                                </SelectGroup>
-                                <SelectSeparator />
+                                    <SelectLabel>Player</SelectLabel>
+                                    <SelectItem value="All">All</SelectItem>
 
+                                    <SelectGroup>
+                                        <SelectLabel>Group A1</SelectLabel>
+                                        <SelectItem value="Sagar">Sagar</SelectItem>
+                                        <SelectItem value="Md. Abdullah Al-Mubin">Md. Abdullah Al-Mubin</SelectItem>
+                                        <SelectItem value="Mamun">Mamun</SelectItem>
+                                        <SelectItem value="Md. Shahiduzzaman">Md. Shahiduzzaman</SelectItem>
+                                        <SelectItem value="Samrat Ghosh">Samrat Ghosh</SelectItem>
+                                        <SelectItem value="Mohammad Nabiluzzaman Neloy">Mohammad Nabiluzzaman Neloy</SelectItem>
+                                    </SelectGroup>
+                                    <SelectSeparator />
+
+                                    <SelectGroup>
+                                        <SelectLabel>Group A2</SelectLabel>
+                                        <SelectItem value="Fazle Rabbi Biswas">Fazle Rabbi Biswas</SelectItem>
+                                        <SelectItem value="Luscious Larry Das">Luscious Larry Das</SelectItem>
+                                        <SelectItem value="Md. Aminul Islam">Md. Aminul Islam</SelectItem>
+                                        <SelectItem value="Tahsin">Tahsin</SelectItem>
+                                        <SelectItem value="Md. Ashfiqul Alam Chowdhury">Md. Ashfiqul Alam Chowdhury</SelectItem>
+                                        <SelectItem value="Shohag Rana">Shohag Rana</SelectItem>
+                                    </SelectGroup>
+                                    <SelectSeparator />
+
+                                    <SelectGroup>
+                                        <SelectLabel>Group A3</SelectLabel>
+                                        <SelectItem value="Isfaque Jahan Md. Sakib">Isfaque Jahan Md. Sakib</SelectItem>
+                                        <SelectItem value="Fazle Rabbi">Fazle Rabbi</SelectItem>
+                                        <SelectItem value="Shah Riya Naeem">Shah Riya Naeem</SelectItem>
+                                        <SelectItem value="Md. Jaber Al Saleh">Md. Jaber Al Saleh</SelectItem>
+                                        <SelectItem value="Ashikur Rahman">Ashikur Rahman</SelectItem>
+                                    </SelectGroup>
+                                    <SelectSeparator />
+
+                                    <SelectGroup>
+                                        <SelectLabel>Group A4</SelectLabel>
+                                        <SelectItem value="Abdul Awal Nadim">Abdul Awal Nadim</SelectItem>
+                                        <SelectItem value="Md. Tahseen Rahman">Md. Tahseen Rahman</SelectItem>
+                                        <SelectItem value="Farhan">Farhan</SelectItem>
+                                        <SelectItem value="Md. Saiful Islam">Md. Saiful Islam</SelectItem>
+                                        <SelectItem value="Partha">Partha</SelectItem>
+                                        <SelectItem value="Imtiaz Shawn">Imtiaz Shawn</SelectItem>
+                                    </SelectGroup>
+                                    <SelectSeparator />
+
+                                    <SelectGroup>
+                                        <SelectLabel>Group B1</SelectLabel>
+                                        <SelectItem value="Shohel Rana">Shohel Rana</SelectItem>
+                                        <SelectItem value="Raihan">Raihan</SelectItem>
+                                        <SelectItem value="Mehedi Hasan">Mehedi Hasan</SelectItem>
+                                    </SelectGroup>
+                                    <SelectSeparator />
+
+                                    <SelectGroup>
+                                        <SelectLabel>Group B2</SelectLabel>
+                                        <SelectItem value="Jaminur">Jaminur</SelectItem>
+                                        <SelectItem value="Mahmudul Hasan Masum">Mahmudul Hasan Masum</SelectItem>
+                                        <SelectItem value="Tariquzzaman Tuhin">Tariquzzaman Tuhin</SelectItem>
+                                    </SelectGroup>
+                                    <SelectSeparator />
+                                </SelectGroup>
+                            </SelectContent>
+                        </Select>
+                    </Field>
+
+                    <Field>
+                        <FieldLabel>Group</FieldLabel>
+                        <Select name="group" id="" value={selectedGroup} onValueChange={handleGroupChange}>
+                            <SelectTrigger className="w-full max-w-48">
+                                <SelectValue placeholder="Select a Group" />
+                            </SelectTrigger>
+                            <SelectContent>
                                 <SelectGroup>
-                                    <SelectLabel>Group A2</SelectLabel>
-                                    <SelectItem value="Fazle Rabbi Biswas">Fazle Rabbi Biswas</SelectItem>
-                                    <SelectItem value="Luscious Larry Das">Luscious Larry Das</SelectItem>
-                                    <SelectItem value="Md. Aminul Islam">Md. Aminul Islam</SelectItem>
-                                    <SelectItem value="Tahsin">Tahsin</SelectItem>
-                                    <SelectItem value="Md. Ashfiqul Alam Chowdhury">Md. Ashfiqul Alam Chowdhury</SelectItem>
-                                    <SelectItem value="Shohag Rana">Shohag Rana</SelectItem>
+                                    <SelectLabel>Group</SelectLabel>
+                                    <SelectItem value="All">All</SelectItem>
+                                    <SelectItem value="A1">A1</SelectItem>
+                                    <SelectItem value="A2">A2</SelectItem>
+                                    <SelectItem value="A3">A3</SelectItem>
+                                    <SelectItem value="A4">A4</SelectItem>
+                                    <SelectItem value="B1">B1</SelectItem>
+                                    <SelectItem value="B2">B2</SelectItem>
                                 </SelectGroup>
-                                <SelectSeparator />
-
-                                <SelectGroup>
-                                    <SelectLabel>Group A3</SelectLabel>
-                                    <SelectItem value="Isfaque Jahan Md. Sakib">Isfaque Jahan Md. Sakib</SelectItem>
-                                    <SelectItem value="Fazle Rabbi">Fazle Rabbi</SelectItem>
-                                    <SelectItem value="Shah Riya Naeem">Shah Riya Naeem</SelectItem>
-                                    <SelectItem value="Md. Jaber Al Saleh">Md. Jaber Al Saleh</SelectItem>
-                                    <SelectItem value="Ashikur Rahman">Ashikur Rahman</SelectItem>
-                                </SelectGroup>
-                                <SelectSeparator />
-
-                                <SelectGroup>
-                                    <SelectLabel>Group A4</SelectLabel>
-                                    <SelectItem value="Abdul Awal Nadim">Abdul Awal Nadim</SelectItem>
-                                    <SelectItem value="Md. Tahseen Rahman">Md. Tahseen Rahman</SelectItem>
-                                    <SelectItem value="Farhan">Farhan</SelectItem>
-                                    <SelectItem value="Md. Saiful Islam">Md. Saiful Islam</SelectItem>
-                                    <SelectItem value="Partha">Partha</SelectItem>
-                                    <SelectItem value="Imtiaz Shawn">Imtiaz Shawn</SelectItem>
-                                </SelectGroup>
-                                <SelectSeparator />
-
-                                <SelectGroup>
-                                    <SelectLabel>Group B1</SelectLabel>
-                                    <SelectItem value="Samrat Ghosh">Samrat Ghosh</SelectItem>
-                                    <SelectItem value="Shohag Rana">Shohag Rana</SelectItem>
-                                    <SelectItem value="Shohel Rana">Shohel Rana</SelectItem>
-                                    <SelectItem value="Raihan">Raihan</SelectItem>
-                                    <SelectItem value="Mehedi Hasan">Mehedi Hasan</SelectItem>
-                                </SelectGroup>
-                                <SelectSeparator />
-
-                                <SelectGroup>
-                                    <SelectLabel>Group B2</SelectLabel>
-                                    <SelectItem value="Shohag Rana">Shohag Rana</SelectItem>
-                                    <SelectItem value="Imtiaz Shawn">Imtiaz Shawn</SelectItem>
-                                    <SelectItem value="Jaminur">Jaminur</SelectItem>
-                                    <SelectItem value="Mahmudul Hasan Masum">Mahmudul Hasan Masum</SelectItem>
-                                    <SelectItem value="Tariquzzaman Tuhin">Tariquzzaman Tuhin</SelectItem>
-                                </SelectGroup>
-                                <SelectSeparator />
-                            </SelectGroup>
-                        </SelectContent>
-                    </Select>
-
-                    <Select name="group" id="" value={selectedGroup} onValueChange={handleGroupChange}>
-                        <SelectTrigger className="w-full max-w-48">
-                            <SelectValue placeholder="Select a Group" />
-                        </SelectTrigger>
-                        <SelectContent>
-                            <SelectGroup>
-                                <SelectLabel>Groups</SelectLabel>
-                                <SelectItem value="All">All</SelectItem>
-                                <SelectItem value="A1">A1</SelectItem>
-                                <SelectItem value="A2">A2</SelectItem>
-                                <SelectItem value="A3">A3</SelectItem>
-                                <SelectItem value="A4">A4</SelectItem>
-                                <SelectItem value="B1">B1</SelectItem>
-                                <SelectItem value="B2">B2</SelectItem>
-                            </SelectGroup>
-                        </SelectContent>
-                    </Select>
+                            </SelectContent>
+                        </Select>
+                    </Field>
                 </div>
                 {filteredGroups.length > 0 ? (<table id="tablepress-283" className="tablepress tablepress-id-283 tbody-has-connected-cells">
                     <thead>
