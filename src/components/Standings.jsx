@@ -26,11 +26,11 @@ const Standings = () => {
                             <strong>Group B2</strong>: Imtiaz Shawn, Ashikur, Jaminur, Mahmudul Hasan Masum, "Tariquzzaman Tuhin
                         </div>
                     </section> */}
-            <div className="grid sm:grid-cols-2 xl:grid-cols-4 gap-y-6">
+            <div className="grid sm:grid-cols-2 xl:grid-cols-4 gap-6">
                 <div>
                     <h1 className="text-2xl font-bold">Group A1</h1>
                     <table className="tablepress">
-                        <thead>
+                        <thead style={{ background: '#f8f9fa' }}>
                             <tr>
                                 <th>Names</th>
                                 <th>P</th>
@@ -55,7 +55,7 @@ const Standings = () => {
                 <div>
                     <h1 className="text-2xl font-bold">Group A2</h1>
                     <table className="tablepress">
-                        <thead>
+                        <thead style={{ background: '#f8f9fa' }}>
                             <tr>
                                 <th>Names</th>
                                 <th>P</th>
@@ -80,7 +80,7 @@ const Standings = () => {
                 <div>
                     <h1 className="text-2xl font-bold">Group A3</h1>
                     <table className="tablepress">
-                        <thead>
+                        <thead style={{ background: '#f8f9fa' }}>
                             <tr>
                                 <th>Names</th>
                                 <th>P</th>
@@ -105,7 +105,7 @@ const Standings = () => {
                 <div>
                     <h1 className="text-2xl font-bold">Group A4</h1>
                     <table className="tablepress">
-                        <thead>
+                        <thead style={{ background: '#f8f9fa' }}>
                             <tr>
                                 <th>Names</th>
                                 <th>P</th>
@@ -130,7 +130,7 @@ const Standings = () => {
                 <div>
                     <h1 className="text-2xl font-bold">Group B1</h1>
                     <table className="tablepress">
-                        <thead>
+                        <thead style={{ background: '#f8f9fa' }}>
                             <tr>
                                 <th>Names</th>
                                 <th>P</th>
@@ -155,7 +155,7 @@ const Standings = () => {
                 <div>
                     <h1 className="text-2xl font-bold">Group B2</h1>
                     <table className="tablepress">
-                        <thead>
+                        <thead style={{ background: '#f8f9fa' }}>
                             <tr>
                                 <th>Names</th>
                                 <th>P</th>

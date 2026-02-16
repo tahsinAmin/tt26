@@ -135,6 +135,10 @@ section {
   position: relative;
 }
 
+.tablepress {
+  width: 100%;
+}
+
 .tablepress>:not(caption)>*>* {
   background: none;
   border: none;

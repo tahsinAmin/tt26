@@ -642,18 +642,13 @@ export const groups = [
         "time": "11:00",
         "players": ["Imtiaz Shawn", "Md. Tahseen Rahman"],
         "group": "A4",
-        "history": null
+        history: {
+            winner: "Imtiaz Shawn",
+            results: [[11, 2, 0], [14, 12, 0]]
+        }
     },
     {
         "id": 79,
-        "date": "16-Feb-26",
-        "time": "11:05",
-        "players": ["Abdul Awal Nadim", "Md. Tahseen Rahman"],
-        "group": "A4",
-        "history": null
-    },
-    {
-        "id": 80,
         "date": "16-Feb-26",
         "time": "11:10",
         "players": ["Ashikur Rahman", "Isfaque Jahan Md. Sakib"],
@@ -661,130 +656,180 @@ export const groups = [
         "history": null
     },
     {
-        "id": 81,
+        "id": 80,
         "date": "16-Feb-26",
         "time": "11:15",
         "players": ["Fazle Rabbi", "Ashikur Rahman"],
         "group": "A3",
-        "history": null
+        history: {
+            winner: "Fazle Rabbi",
+            results: [[12, 10, 0], [11, 6, 0]]
+        }
     },
     {
-        id: 82,
+        id: 81,
         date: "16-Feb-26",
         time: "11:20",
         players: ["Shohag Rana", "Luscious Larry Das"],
         group: "A2",
-        history: null
+        history: {
+            winner: "Shohag Rana",
+            results: [[11, 8, 0], [5, 11, 1], [14, 12, 0]]
+        }
     },
     {
-        "id": 83,
+        "id": 82,
         "date": "16-Feb-26",
         "time": "14:00",
         "players": ["Md. Shahiduzzaman", "Md. Abdullah Al-Mubin"],
         "group": "A1",
-        "history": null
+        history: {
+            winner: "Md. Shahiduzzaman",
+            results: [[8, 11, 1], [11, 9, 0], [14, 12, 0]]
+        }
     },
     {
-        "id": 84,
+        "id": 83,
         "date": "16-Feb-26",
         "time": "14:30",
         "players": ["Partha", "Imtiaz Shawn"],
         "group": "A4",
-        "history": null
+        history: {
+            winner: "Partha",
+            results: [[12, 10, 0], [11, 9, 0]]
+        }
     },
     {
-        id: 85,
+        id: 84,
         date: "16-Feb-26",
         time: "14:35",
         players: ["Abdul Awal Nadim", "Imtiaz Shawn"],
         group: "A4",
-        history: null
+        history: {
+            winner: "Abdul Awal Nadim",
+            results: [[11, 8, 0], [11, 8, 0]]
+        }
     },
     {
-        "id": 86,
-        "date": "16-Feb-26",
-        "time": "14:40",
-        "players": ["Mamun", "Md. Shahiduzzaman"],
-        "group": "A1",
-        "history": null
-    },
-    {
-        "id": 87,
+        "id": 85,
         "date": "16-Feb-26",
         "time": "14:45",
         "players": ["Partha", "Md. Saiful Islam"],
         "group": "A4",
-        "history": null
+        history: {
+            winner: "Md. Saiful Islam",
+            results: [[3, 11, 1], [7, 11, 1]]
+        }
     },
     {
-        "id": 88,
+        "id": 86,
         "date": "16-Feb-26",
         "time": "14:50",
-        "players": ["Md. Saiful Islam", "Md. Tahseen Rahman"],
+        "players": ["Md. Tahseen Rahman", "Md. Saiful Islam"],
         "group": "A4",
-        "history": null
+        history: {
+            winner: "Md. Tahseen Rahman",
+            results: [[10, 12, 1], [11, 8, 0], [12, 10, 0]]
+        }
     },
     {
-        "id": 89,
+        "id": 87,
         "date": "16-Feb-26",
         "time": "14:55",
         "players": ["Fazle Rabbi Biswas", "Shohag Rana"],
         "group": "A2",
-        "history": null
+        history: {
+            winner: "Shohag Rana",
+            results: [[0, 7, 1], [0, 7, 1]]
+        }
     },
     {
-        "id": 90,
+        "id": 88,
         "date": "16-Feb-26",
         "time": "18:05",
         "players": ["Abdul Awal Nadim", "Farhan"],
         "group": "A4",
-        "history": null
+        history: {
+            winner: "Abdul Awal Nadim",
+            results: [[11, 6, 0], [11, 2, 0]]
+        }
     },
     {
-        "id": 91,
+        "id": 89,
         "date": "16-Feb-26",
         "time": "18:10",
         "players": ["Farhan", "Imtiaz Shawn"],
         "group": "A4",
-        "history": null
+        history: {
+            winner: "Imtiaz Shawn",
+            results: [[8, 11, 1], [11, 6, 0], [7, 11, 1]]
+        }
     },
     {
-        "id": 92,
+        "id": 90,
         "date": "16-Feb-26",
         "time": "18:15",
         "players": ["Md. Ashfiqul Alam Chowdhury", "Shohag Rana"],
         "group": "A2",
-        "history": null
+        history: {
+            winner: "Shohag Rana",
+            results: [[0, 7, 1], [0, 7, 1]]
+        }
     },
     {
-        "id": 93,
+        "id": 91,
         "date": "16-Feb-26",
         "time": "19:00",
         "players": ["Mamun", "Sagar"],
         "group": "A1",
-        "history": null
+        history: {
+            winner: "Mamun",
+            results: [[12, 10, 0], [4, 11, 1], [11, 8, 0]]
+        }
     },
     {
-        "id": 94,
+        "id": 92,
         "date": "16-Feb-26",
         "time": "19:10",
         "players": ["Mamun", "Samrat Ghosh"],
+        "group": "A1",
+        history: {
+            winner: "Mamun",
+            results: [[11, 8, 0], [11, 8, 0]]
+        }
+    },
+    {
+        "id": 93,
+        "date": "17-Feb-26",
+        "time": "10:00",
+        "players": ["Fazle Rabbi Biswas", "Luscious Larry Das"],
+        "group": "A2",
+        history: {
+            winner: "Luscious Larry Das",
+            results: [[0, 7, 1], [0, 7, 1]]
+        }
+    },
+    {
+        "id": 94,
+        "date": "17-Feb-26",
+        "time": "11:00",
+        "players": ["Samrat Ghosh", "Mohammad Nabiluzzaman Neloy"],
         "group": "A1",
         "history": null
     },
     {
         "id": 95,
         "date": "17-Feb-26",
-        "time": "11:00",
-        "players": ["Fazle Rabbi Biswas", "Luscious Larry Das"],
-        "group": "A2",
+        "time": "11:05",
+        "players": ["Abdul Awal Nadim", "Md. Tahseen Rahman"],
+        "group": "A4",
         "history": null
     },
     {
         "id": 96,
         "date": "17-Feb-26",
-        "time": "11:05",
-        "players": ["Samrat Ghosh", "Mohammad Nabiluzzaman Neloy"],
+        "time": "11:10",
+        "players": ["Mamun", "Md. Shahiduzzaman"],
         "group": "A1",
         "history": null
     },
@@ -798,7 +843,7 @@ export const groups = [
     {
         "id": 97,
         "date": "17-Feb-26",
-        "time": "11:10",
+        "time": "11:15",
         "players": ["Top of Group A1", "Runner-up of Group A3"],
         "group": "QF1",
         "history": null
@@ -806,7 +851,7 @@ export const groups = [
     {
         "id": 98,
         "date": "17-Feb-26",
-        "time": "11:15",
+        "time": "14:30",
         "players": ["Top of Group A2", "Runner-up of Group A4"],
         "group": "QF2",
         "history": null
@@ -860,7 +905,7 @@ export const groups = [
     {
         "id": 103,
         "date": "17-Feb-26",
-        "time": "18:00",
+        "time": "14:55",
         "players": ["Loser SF 1", "Loser SF 2"],
         "group": "Third Place",
         "history": null
@@ -886,38 +931,38 @@ export const groups = [
 
 
 export const standingsA1 = [
-    { name: "Sagar", P: 4, W: 4, L: 0, Pts: 4 },
-    { name: "Md. Abdullah Al-Mubin", P: 4, W: 2, L: 2, Pts: 2 },
-    { name: "Md. Shahiduzzaman", P: 3, W: 2, L: 1, Pts: 2 },
-    { name: "Mamun", P: 2, W: 1, L: 1, Pts: 1 },
-    { name: "Samrat Ghosh", P: 3, W: 1, L: 2, Pts: 1 },
+    { name: "Sagar", P: 5, W: 4, L: 1, Pts: 4 },
+    { name: "Md. Shahiduzzaman", P: 4, W: 3, L: 1, Pts: 3 },
+    { name: "Mamun", P: 4, W: 3, L: 1, Pts: 3 },
+    { name: "Md. Abdullah Al-Mubin", P: 5, W: 2, L: 3, Pts: 2 },
+    { name: "Samrat Ghosh", P: 4, W: 1, L: 3, Pts: 1 },
     { name: "Mohammad Nabiluzzaman Neloy", P: 4, W: 0, L: 4, Pts: 0 }
 ];
 
 export const standingsA2 = [
     { name: "Tahsin", P: 5, W: 4, L: 1, Pts: 4 },
+    { name: "Shohag Rana", P: 5, W: 4, L: 1, Pts: 4 },
     { name: "Md. Aminul Islam", P: 5, W: 3, L: 2, Pts: 3 },
-    { name: "Luscious Larry Das", P: 3, W: 2, L: 0, Pts: 2 },
-    { name: "Fazle Rabbi Biswas", P: 3, W: 1, L: 2, Pts: 1 },
-    { name: "Shohag Rana", P: 2, W: 1, L: 1, Pts: 1 },
-    { name: "Md. Ashfiqul Alam Chowdhury", P: 4, W: 0, L: 4, Pts: 0 },
+    { name: "Luscious Larry Das", P: 5, W: 3, L: 2, Pts: 3 },
+    { name: "Fazle Rabbi Biswas", P: 5, W: 1, L: 4, Pts: 1 },
+    { name: "Md. Ashfiqul Alam Chowdhury", P: 5, W: 0, L: 5, Pts: 0 },
 ];
 
 export const standingsA3 = [
-    { name: "Isfaque Jahan Md. Sakib", P: 4, W: 3, L: 1, Pts: 3 },
-    { name: "Fazle Rabbi", P: 3, W: 3, L: 0, Pts: 3 },
+    { name: "Fazle Rabbi", P: 4, W: 4, L: 0, Pts: 4 },
+    { name: "Isfaque Jahan Md. Sakib", P: 3, W: 2, L: 2, Pts: 2 },
+    { name: "Ashikur Rahman", P: 3, W: 1, L: 2, Pts: 1 },
+    { name: "Shah Riya Naeem", P: 4, W: 1, L: 3, Pts: 1 },
     { name: "Md. Jaber Al Saleh", P: 4, W: 1, L: 3, Pts: 1 },
-    { name: "Ashikur Rahman", P: 2, W: 1, L: 1, Pts: 1 },
-    { name: "Shah Riya Naeem", P: 4, W: 0, L: 4, Pts: 0 }
 ];
 
 export const standingsA4 = [
-    { name: "Abdul Awal Nadim", P: 2, W: 2, L: 0, Pts: 2 },
-    { name: "Md. Saiful Islam", P: 3, W: 2, L: 1, Pts: 2 },
-    { name: "Md. Tahseen Rahman", P: 2, W: 1, L: 1, Pts: 1 },
-    { name: "Farhan", P: 3, W: 1, L: 2, Pts: 1 },
-    { name: "Partha", P: 3, W: 1, L: 2, Pts: 1 },
-    { name: "Imtiaz Shawn", P: 1, W: 0, L: 1, Pts: 0 },
+    { name: "Abdul Awal Nadim", P: 4, W: 4, L: 0, Pts: 4 },
+    { name: "Md. Saiful Islam", P: 5, W: 3, L: 2, Pts: 3 },
+    { name: "Md. Tahseen Rahman", P: 4, W: 2, L: 2, Pts: 2 },
+    { name: "Imtiaz Shawn", P: 5, W: 2, L: 3, Pts: 2 },
+    { name: "Partha", P: 5, W: 2, L: 3, Pts: 2 },
+    { name: "Farhan", P: 5, W: 1, L: 4, Pts: 1 },
 ]
 
 export const standingsB1 = [
