@@ -117,6 +117,7 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
@@ -128,10 +129,10 @@
 }
 
 section {
-    background-position: center;
-    background-size: cover;
-    padding-top: var(--section-padding);
-    position: relative;
+  background-position: center;
+  background-size: cover;
+  padding-top: var(--section-padding);
+  position: relative;
 }
 
 .tablepress>:not(caption)>*>* {
@@ -147,6 +148,41 @@ section {
 
 @media (min-width: 992px) {
   .tablepress {
-      --padding: 0.7em;
+    --padding: 0.7em;
+  }
+}
+
+
+/* Custom scrollbar styling */
+div[style*="overflowX: auto"]::-webkit-scrollbar {
+  height: 8px;
+}
+
+div[style*="overflowX: auto"]::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+div[style*="overflowX: auto"]::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+div[style*="overflowX: auto"]::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .history-table {
+    font-size: 12px;
+  }
+
+  .history-table th,
+  .history-table td {
+    padding: 8px 10px;
+  }
+
+  .tablepress {
+    width: 100%
   }
 }

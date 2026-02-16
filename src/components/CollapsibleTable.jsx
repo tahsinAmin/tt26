@@ -46,8 +46,8 @@ const CollapsibleTable = () => {
         }
 
         return (
-            <table className="tablepress">
-                <thead>
+            <table className="tablepress history-table">
+                <thead style={{ background: '#ffffff' }}>
                     <tr>
                         <th>Game</th>
                         <th>{players[0]}</th>
@@ -108,13 +108,13 @@ const CollapsibleTable = () => {
     }, [selectedName, selectedGroup]);
 
     return (
-        <div className="min-h-svh max-w-[1660px] mx-auto">
-            <h1 className="text-7xl font-bold my-26 text-[#00456b]">Table Tennis Singles 2026 (Unofficial)</h1>
+        <div className="min-h-svh max-w-[1660px] mx-auto px-4">
+            <h1 className="text-2xl md:text-7xl font-bold  my-12 md:my-26 text-[#00456b]">Table Tennis Singles 2026 (Unofficial)</h1>
 
             <Standings />
 
             <section className="tablepress-responsive-container mb-40">
-                <div className="grid gap-2 grid-cols-6 mb-6">
+                <div className="grid gap-2 sm:grid-cols-6 mb-6">
                     <Field>
                         <FieldLabel>Player</FieldLabel>
 
@@ -211,64 +211,66 @@ const CollapsibleTable = () => {
                         </Select>
                     </Field>
                 </div>
-                {filteredGroups.length > 0 ? (<table id="tablepress-283" className="tablepress tablepress-id-283 tbody-has-connected-cells">
-                    <thead>
-                        <tr className="row-1">
-                            <th className="column-0"></th>
-                            <th className="column-1">Match</th>
-                            <th className="column-2">Date</th>
-                            <th className="column-3">Time (EST)</th>
-                            <th className="column-5">Matchup</th>
-                            <th className="column-6">Group</th>
-                            <th className="column-7">Winner</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {filteredGroups.map((group, index) => {
-                            if (group.id < 0) {
-                                return (
-                                    <tr className="row-91" key={index}>
-                                        <td colSpan="8" className="column-1"><b>{group.matchup}</b></td>
-                                    </tr>
-                                )
-                            }
-                            return (
-                                <React.Fragment key={index}>
-                                    <tr className="row-2 cursor-pointer" onClick={() => toggleRow(index)}>
-                                        <td className="column-0" style={styles.td}>
-                                            <span style={styles.arrowCell} >
-                                                <span style={{
-                                                    ...styles.arrow,
-                                                    transform: expandedRows.has(index) ? 'rotate(180deg)' : 'rotate(0deg)'
-                                                }}></span>
-                                            </span>
-                                        </td>
-                                        <td className="column-1">{group.id}</td>
-                                        <td className="column-2">{group.date}</td>
-                                        <td className="column-3">{group.time}</td>
-                                        <td className="column-5">{group.players[0]} vs. {group.players[1]}</td>
-                                        <td className="column-6">{group.group}</td>
-                                        {group.history && (
-                                            <td className="column-7">{group.history.winner}</td>
-                                        )}
-                                    </tr>
-                                    {expandedRows.has(index) && (
-                                        <tr style={styles.detailsRow}>
-                                            <td colSpan="5">
-                                                <div style={styles.detailsContent}>
-                                                    <div style={styles.historySection}>
-                                                        <div style={styles.historyTitle}>History</div>
-                                                        <HistoryTable history={group.history} players={group.players} />
-                                                    </div>
-                                                </div>
-                                            </td>
+                <div style={styles.tableWrapper}>
+                    {filteredGroups.length > 0 ? (<table id="tablepress-283" className="tablepress tablepress-id-283 tbody-has-connected-cells" style={styles.table}>
+                        <thead style={styles.thead}>
+                            <tr className="row-1">
+                                <th style={{ ...styles.th, ...styles.thFirst }} className="column-0"></th>
+                                <th style={styles.th} className="column-1">Match</th>
+                                <th style={styles.th} className="column-2">Date</th>
+                                <th style={styles.th} className="column-3">Time (EST)</th>
+                                <th style={styles.th} className="column-5">Matchup</th>
+                                <th style={styles.th} className="column-6">Group</th>
+                                <th style={styles.th} className="column-7">Winner</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {filteredGroups.map((group, index) => {
+                                if (group.id < 0) {
+                                    return (
+                                        <tr className="row-91" key={index}>
+                                            <td style={{...styles.td, ...styles.tdFirst}} colSpan="8" className="column-1"><b>{group.matchup}</b></td>
                                         </tr>
-                                    )}
-                                </React.Fragment>
-                            )
-                        })}
-                    </tbody>
-                </table>) : (<p>No data found</p>)}
+                                    )
+                                }
+                                return (
+                                    <React.Fragment key={index}>
+                                        <tr className="row-2 cursor-pointer" onClick={() => toggleRow(index)}>
+                                            <td className="column-0" style={{...styles.td, ...styles.tdFirst}}>
+                                                <span style={styles.arrowCell} >
+                                                    <span style={{
+                                                        ...styles.arrow,
+                                                        transform: expandedRows.has(index) ? 'rotate(180deg)' : 'rotate(0deg)'
+                                                    }}></span>
+                                                </span>
+                                            </td>
+                                            <td className="column-1" style={styles.td}>{group.id}</td>
+                                            <td className="column-2" style={styles.td}>{group.date}</td>
+                                            <td className="column-3" style={styles.td}>{group.time}</td>
+                                            <td className="column-5" style={styles.td}>{group.players[0]} vs. {group.players[1]}</td>
+                                            <td className="column-6" style={styles.td}>{group.group}</td>
+                                            {group.history && (
+                                                <td className="column-7">{group.history.winner}</td>
+                                            )}
+                                        </tr>
+                                        {expandedRows.has(index) && (
+                                            <tr style={styles.detailsRow}>
+                                                <td colSpan="7">
+                                                    <div style={styles.detailsContent}>
+                                                        <div style={styles.historySection}>
+                                                            <div style={styles.historyTitle}>History</div>
+                                                            <HistoryTable history={group.history} players={group.players} />
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        )}
+                                    </React.Fragment>
+                                )
+                            })}
+                        </tbody>
+                    </table>) : (<p>No data found</p>)}
+                </div>
 
             </section>
         </div>
@@ -277,6 +279,43 @@ const CollapsibleTable = () => {
 
 const styles = {
 
+    tableWrapper: {
+        overflowX: 'auto',
+        WebkitOverflowScrolling: 'touch' // Smooth scrolling on iOS
+    },
+    table: {
+        width: '100%',
+        minWidth: '700px', // Prevents content from breaking on small screens
+        borderCollapse: 'collapse'
+    },
+    thead: {
+        background: '#f8f9fa',
+        borderBottom: '2px solid #e0e0e0',
+        position: 'sticky',
+        top: 0,
+        zIndex: 10
+    },
+    th: {
+        padding: '16px',
+        textAlign: 'left',
+        fontWeight: '600',
+        color: '#333',
+        fontSize: '14px',
+        background: '#f8f9fa',
+        whiteSpace: 'nowrap'
+    },
+    // thFirst: {
+    //     minWidth: '25px'
+    // },
+    td: {
+        padding: '16px',
+        color: '#333',
+        fontSize: '14px',
+        whiteSpace: 'nowrap'
+    },
+    // tdFirst: {
+    //     minWidth: '25px'
+    // },
     arrowCell: {
         display: 'inline-block',
         width: '40px',
