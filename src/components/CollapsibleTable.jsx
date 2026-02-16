@@ -250,7 +250,7 @@ const CollapsibleTable = () => {
                                             <td className="column-5" style={styles.td}>{group.players[0]} vs. {group.players[1]}</td>
                                             <td className="column-6" style={styles.td}>{group.group}</td>
                                             {group.history && (
-                                                <td className="column-7">{group.history.winner}</td>
+                                                <td className="column-7" style={styles.td}>{group.history.winner}</td>
                                             )}
                                         </tr>
                                         {expandedRows.has(index) && (
