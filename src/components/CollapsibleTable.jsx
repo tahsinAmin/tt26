@@ -109,7 +109,6 @@ const CollapsibleTable = () => {
 
     return (
         <div className="min-h-svh max-w-[1660px] mx-auto px-4">
-            <h1 className="text-2xl md:text-7xl font-bold  my-12 md:my-26 text-[#00456b]">Table Tennis Singles 2026 (Unofficial)</h1>
 
             <Standings />
 
